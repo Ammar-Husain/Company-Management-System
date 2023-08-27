@@ -80,13 +80,13 @@ export default function ManageUsersPage(props) {
 							(!((user.roles.SuperAdmin === 2004 || user.roles.Admin === 2002) 
 							&& role !== 'Super Admin') || user.username === currentUser.username) &&
 							<button className="edit" name="edit">
-								<img src="../icons/edit-icon.png" name="edit" onClick={() => start('updating')}/>
+								<img src="./icons/edit-icon.png" name="edit" onClick={() => start('updating')}/>
 							</button>
 						}
 						{ !(user.roles.SuperAdmin === 2004 ||
 						(user.roles.Admin === 2002 && role !== 'Super Admin' && user.username !== currentUser.username)) &&
 							<button className="delete" name="delete" >
-								<img src="../icons/delete-icon.png" name="delete" onClick={() => start('deleting')}/>
+								<img src="./icons/delete-icon.png" name="delete" onClick={() => start('deleting')}/>
 							</button>
 						}
 				</div>
@@ -111,7 +111,7 @@ export default function ManageUsersPage(props) {
 			</div>
 			{usersList}
 			<div className="add-user-button" onClick={() => start('adding')}>
-				<img src="../icons/add-user-icon.png"/>
+				<img src="./icons/add-user-icon.png"/>
 			</div>
 		</div>
 		<div className="logout-back-container">
