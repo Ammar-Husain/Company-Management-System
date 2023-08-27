@@ -79,12 +79,12 @@ export default function ManageEmployeesPage(props) {
 					<div className="edit-delete-buttons" id="edit-delete-emp">
 					{ emp.isSelected && 
 						<button className="edit" id="edit-emp" name="edit">
-							<img src="/src/icons/edit-icon.png" name="edit" onClick={() => start('updating')}/>
+							<img src="/icons/edit-icon.png" name="edit" onClick={() => start('updating')}/>
 						</button>
 					}
 					{ emp.isSelected && role !== 'User' &&
 					<button className="delete" id="delete-emp" name="delete" >
-						<img src="/src/icons/delete-icon.png" name="delete" onClick={() => start('deleting')}/>
+						<img src="/icons/delete-icon.png" name="delete" onClick={() => start('deleting')}/>
 					</button>
 					}
 				</div>
@@ -108,8 +108,8 @@ export default function ManageEmployeesPage(props) {
 				</div>
 				{empsList}
 				<div className="add-button" id="add-emp" onClick={() => start('adding')}>
-					<img id="emp-icon" src="/src/icons/employee-icon.png"/>
-					<img id="add-icon" src="/src/icons/add-icon.png"/>
+					<img id="emp-icon" src="/icons/employee-icon.png"/>
+					<img id="add-icon" src="/icons/add-icon.png"/>
 				</div>
 			</div>
 			{isDeletingEmp  && 
